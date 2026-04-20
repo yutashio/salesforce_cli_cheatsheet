@@ -1,4 +1,4 @@
-# Salesforce CLI 早見表
+# [WIP] Salesforce CLI 早見表
 
 > コピペして `<>` の中を書き換えて使用する。
 
@@ -31,4 +31,21 @@ sf org login web --alias <org-alias> --instance-url https://test.salesforce.com
 sf org logout --target-org <org-alias>
 ```
 
----
+## クエリ
+
+### SOQLクエリを実行
+```bash
+sf data query \
+  --query "SELECT Id, Name FROM <Account> LIMIT 10" \
+  --target-org <org-alias>
+```
+
+### 結果をCSVで出力
+```bash
+sf data query \
+  --query "SELECT Id, Name FROM <Account> LIMIT 10" \
+  --result-format csv \
+  --target-org <org-alias> > output.csv
+```
+
+---作成中🚧---
