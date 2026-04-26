@@ -48,4 +48,28 @@ sf data query \
   --target-org <org-alias> > output.csv
 ```
 
+## Apexログ
+
+### ログ一覧
+```bash
+sf apex log list --target-org <org-alias>
+```
+
+### ログ取得
+```bash
+sf apex get log \
+  --target-org <org-alias> \
+  --log-id <LOG_ID> \
+  --output-dir <dir>
+```
+
+
+## パッケージ操作
+
+### インストール済みパッケージ確認
+```bash
+sf package installed list \
+  --target-org <org-alias>
+```
+
 ---作成中🚧---
