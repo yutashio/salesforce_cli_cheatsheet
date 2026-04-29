@@ -60,7 +60,7 @@ sf apex log list --target-org <org-alias>
 sf apex get log \
   --target-org <org-alias> \
   --log-id <LOG_ID> \
-  --output-dir <dir>
+  --output-dir <OUTPUT_DIR>
 ```
 
 
